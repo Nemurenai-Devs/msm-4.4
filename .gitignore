@@ -67,7 +67,7 @@ Module.symvers
 #
 !.gitignore
 !.mailmap
-!.circleci
+!.ci.yml
 
 #
 # Generated include files

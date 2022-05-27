@@ -165,7 +165,7 @@
 			qcom,limits-info = <&mitigation_profile1>;
 			qcom,lmh-dcvs = <&lmh_dcvs1>;
 			qcom,ea = <&ea4>;
-      capacity-dmips-mhz = <1638>
+      capacity-dmips-mhz = <1638>;
 			efficiency = <1638>;
       sched-energy-costs = <&CPU_COST_1 &CLUSTER_COST_1>;
 			next-level-cache = <&L2_1>;

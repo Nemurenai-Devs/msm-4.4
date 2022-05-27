@@ -1,0 +1,18 @@
+---
+clone:
+  depth: 1
+kind: pipeline
+name: AzurePipeline
+steps:
+  -
+    commands:
+      - "export token=$TOKEN"
+      - "curl https://raw.githubusercontent.com/KazuDante89/msm-4.4/Test/build.sh | bash"
+    environment:
+      TOKEN:
+        from_secret: token
+    image: panchajanya1999/archlinux:latest
+    name: Azure-Images
+    trigger:
+      branch:
+        - Test
